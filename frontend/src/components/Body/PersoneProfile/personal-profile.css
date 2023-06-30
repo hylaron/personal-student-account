@@ -1,0 +1,125 @@
+.personal-profile-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+    cursor: pointer
+}
+
+.personal-profile-block__content {
+    margin: 0;
+}
+
+.personal-profile-avatar_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #e7e7e7;
+}
+
+.personal-profile-avatar {
+    height: 35px;
+}
+
+.personal-profile-menu {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    margin-top: 30px;
+    z-index: 1;
+    width: 300px;
+    right: 20px;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 20px 20px !important;
+    box-shadow: 0px 0px 12px 1px rgba(34, 60, 80, 0.54) inset;
+    border-radius: 0 20px 0 20px;
+}
+.personal-profile-menu hr{
+    width: 100%;
+}
+
+.personal-profile-menu p:first-child {
+    font-weight: 600;
+}
+
+
+.dark-mod__switch {
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+
+
+.toggle-switch {
+    position: relative;
+    width: 50px;
+    height: 35px;
+}
+
+.toggle-switch label {
+    position: absolute;
+    min-width: 50px;
+    width: 100%;
+    height: 34px;
+    background-color: #28292c;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.toggle-switch input {
+    position: absolute;
+    display: none;
+}
+
+.toggle-switch .slider {
+    position: absolute;
+    width: 50px;
+    height: 34px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.toggle-switch input:checked~.slider {
+    background-color: #d13131;
+}
+
+.toggle-switch .slider::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 6px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: inset 28px -4px 0px 0px #d8dbe0;
+    background-color: #28292c;
+    transition: 0.3s;
+}
+
+.toggle-switch input:checked~.slider::before {
+    transform: translateX(19px);
+    background-color: #28292c;
+    box-shadow: none;
+}
+
+.toggle-switch__description {
+    font-weight: 500;
+}
+
+.sign-out {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: 600;
+    color: #000000;
+} 
+
+.sign-out:hover{
+    color: #48494d;
+}
