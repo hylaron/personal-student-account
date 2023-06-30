@@ -20,7 +20,6 @@ const dbServer = {
     user: DB_USER,
     password: DB_PASSWORD,
     database: mbs_DB_DATEBASE,
-    connectTimeout: 300000, // 5 минут (300000 миллисекунд)
 };
 const tunnelConfig = {
     host: TC_HOST,
